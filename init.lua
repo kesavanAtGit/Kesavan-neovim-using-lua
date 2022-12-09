@@ -1,8 +1,11 @@
-local status_ok, _ = pcall(require, "lspconfig")
-if not status_ok then
-  return
-end
-
-require "user.lsp.lsp-installer"
-require("user.lsp.handlers").setup()
-require "user.lsp.null-ls"
+require "user.options"
+require "user.keymaps"
+require "user.plugins"
+require "user.colorscheme"
+require "user.cmp"
+require "user.lsp"
+require "user.telescope"
+require "user.treesitter"
+require "user.autopairs"
+require "user.comment"
+--[[ require "user.gitsigns" ]]
